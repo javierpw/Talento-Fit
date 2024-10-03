@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contacto</h1>
+      <p class="fondo-aqua">
+        Tenes dudas, comentarios, deja un mensaje y te respondemos a la
+        brevedad.
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="https://formspree.io/f/xwpegngy" method="post">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Juan"
+            required
+          />
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Perez"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="nombre@ejemplo.com"
+          />
+        </div>
+
+        <label for="tipo">Es:</label>
+        <select name="tipo">
+          <option value="">Sugerencia</option>
+          <option value="">Reclamo</option>
+        </select>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea rows="7" cols="30" name="mensaje" id="mensaje">
+          Consulta:
+          </textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

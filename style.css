@@ -1,0 +1,20 @@
+*{}
+
+ul{
+list-style: none;
+}
+
+h1{
+color:blue;
+font-size: 24px;
+}
+
+p{
+    color:green;
+}
+
+header{background-color: coral;}
+footer{background-color: bisque;}
+
+.fondo-aqua
+{background-color: aquamarine;}
