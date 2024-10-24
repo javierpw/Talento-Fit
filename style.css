@@ -1,20 +1,76 @@
-*{}
-
-ul{
-list-style: none;
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(214, 185, 175);
+  color: snow;
+}
+footer {
+  background-color: bisque;
 }
 
-h1{
-color:blue;
-font-size: 24px;
+h1 {
+  color: blue;
+  font-size: 24px;
 }
 
 p{
-    color:green;
+    font-family: "Anton", sans-serif;
+}
+ul {
+  display: flex;
+ justify-content: space-evenly;
+  list-style: none;
 }
 
-header{background-color: coral;}
-footer{background-color: bisque;}
+a {
+  text-decoration: none;
+  color: black;
+}
 
-.fondo-aqua
-{background-color: aquamarine;}
+.fondo-aqua {
+  background-color: aquamarine;
+  color:black;
+  text-align: center;
+}
+
+.promo {
+  background-image: url("./Imagenes/ZapatillasFull.png");
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  font-size: 2em;
+  text-align: center;
+}
+.tarjetas{
+  display: flex;
+justify-content: space-between;
+  text-align: center;
+}
+
+.tarjeta
+{
+  margin: 1rem .25em;
+  border:solid 1px ;
+  width: 22%;
+  box-shadow: 5px 5px lightblue;
+}
+.tarjeta:hover
+{
+transform: translateY(-5px);
+}
+
+.tarjeta p {
+  color:gray;
+}
+
+.tarjeta img {
+  width:80%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto auto;
+justify-items: center;
+  gap: 1em 1em;
+}
