@@ -4,7 +4,7 @@ const productos = [
     id: 1,
     nombre: "Zapatillas Nike Air Force 1 07 Mujer",
     descripcion: "Zapatillas de moda para mujer",
-    imagen: "../imagenes/NikeAir-Force1-M.png",
+    imagen: "./imagenes/NikeAir-Force1-M.png",
     precio: 25000,
     stock: 1,
   },
@@ -12,7 +12,7 @@ const productos = [
     id: 2,
     nombre: "Nike Blazer Mid 77 Premium 'Dia de Muertos 2023'",
     descripcion: "Zapatillas de moda para mujer",
-    imagen: "../imagenes/NikeBlazer.png",
+    imagen: "./imagenes/NikeBlazer.png",
     precio: 25000,
     stock: 10,
   },
@@ -77,7 +77,7 @@ fetch("./productos.json")
       const html = `
             <article data-id="${post.id}" class="tarjeta">
                 <h3>${post.nombre}</h3>
-                <img src="../imagenes/${post.imagen}" alt="${post.nombre}">
+                <img src="./imagenes/${post.imagen}" alt="${post.nombre}">
                  <p>${post.descripcion}</p>
                 <p>$ ${post.precio}</p>
                 <button type="button" class="agregar">Agregar</button>
