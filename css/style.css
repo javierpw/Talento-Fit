@@ -1,0 +1,189 @@
+html {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(214, 185, 175);
+  color: snow;
+}
+body{
+  margin: 0;
+  align-content: center;
+}
+footer {
+  background-color: bisque;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-size: 24px;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #532727;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #cc661e;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fondo-aqua {
+  background-color: aquamarine;
+  font-size: 1.2em;
+  color:black;
+  text-align: center;
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 500;
+}
+
+.titulo {
+  width: 80%;
+  font-size: 2em;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 600;
+  color:rgb(33, 42, 109);
+}
+
+#iframe{ Display: flex; 
+  Justify-content: Center;
+  padding: 2rem;
+  }
+
+.promo {
+  background-image: url("../Imagenes/ZapatillasFull.png");
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  font-size: 2em;
+  text-align: center;
+  min-height: 250px;
+  margin: auto;
+  padding: 2rem;
+  align-content: center;
+  font-family: "Anton", sans-serif;
+}
+
+.checked {
+  color: orange;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #8b9cc3;
+  padding: 10px;
+  gap: 50px;
+}
+.grid-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-top: 1em;
+  height: 50px;
+}
+
+.tarjeta
+{
+  margin: 1rem .25em;
+  border:solid 1px ;
+  width: 22%;
+  box-shadow: 5px 5px lightblue;
+}
+
+.tarjeta img {
+  width:80%;
+}
+.listado-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: space-between;
+
+  text-align: center;
+}
+
+.listado-productos article {
+  padding: 0.5em;
+  border: 1px solid gray;
+}
+
+.listado-productos article:hover
+{
+transform: translateY(-5px);
+}
+form {
+  text-align: center;
+}
+input {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  transition: width 0.4s ease-in-out;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+@media screen and (min-width: 768px) {
+  .listado-productos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .listado-productos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

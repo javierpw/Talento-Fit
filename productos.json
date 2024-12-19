@@ -1,0 +1,18 @@
+[
+  {
+    "userId": 1,
+    "id": 5,
+    "nombre": "Air Jordan 1 High OG",
+    "descripcion": "Zapatillas Jordan para Niño",
+    "imagen": "JordanKids.png",
+    "precio":60000
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "nombre": "Nike Court Borough Low Recraft",
+    "descripcion": "Zapatillas de Moda para Niño",
+    "imagen": "CourtKids.png",
+    "precio":60000
+  }
+]

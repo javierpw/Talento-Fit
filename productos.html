@@ -3,76 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Productos Talento Fit">
     <title>Productos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header>
-      <h1>Productos</h1>
-    </header>
+    <header><img src="./imagenes/logo.png" alt="logo" width="300"></header>
     <nav>
       <ul>
         <li><a href="./">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
+        <li><a class="active" href="productos.html">Productos</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="resenas.html">Reseñas</a></li> 
+        <li><a href="resenas.html">Reseñas</a></li>       
       </ul>
     </nav>
     <main>
-      <section class="tarjetas">
-        <article class="tarjeta">
-            <h2>Zapatillas Nike Air Force 1 07 Mujer</h2>
-            <img src="./Imagenes/NikeAir-Force1-M.png" alt="NikeAir" />
-            <p>Zapatillas de moda para mujer</p>
-            <p>
-              El estilo de corte low ofrece un look impecable y sencillo.
-            </p>
-            <a
-              href="https://www.nike.com.ar/nike-air-force-1-07-hf4263-133/p"
-            >
-              Ver detalle</a
-            >
-        </article>
+      <h1>Talento Fit Productos</h1>
+      <h2 class="titulo">Listado de productos </h2>
 
-        <article class="tarjeta">
-          <h2>Zapatillas Nike Air Force 1 07 Mujer</h2>
+      <section class="listado-productos">
+        <article data-id="" class="tarjeta">
+          <h3>Zapatillas Nike Air Force 1 07 Mujer</h3>
           <img src="./Imagenes/NikeAir-Force1-M.png" alt="NikeAir" />
           <p>Zapatillas de moda para mujer</p>
-          <p>
-            El estilo de corte low ofrece un look impecable y sencillo.
-          </p>
-          <a
-            href="https://www.nike.com.ar/nike-air-force-1-07-hf4263-133/p"
-          >
+          <p>El estilo de corte low ofrece un look impecable y sencillo.</p>
+          <a href="https://www.nike.com.ar/nike-air-force-1-07-hf4263-133/p">
             Ver detalle</a
           >
-      </article>
+          <button type="button" class="agregar">Agregar</button>
+        </article>
 
-        <article class="tarjeta">
-          <h2>Zapatillas Nike Air Force 1 08 Hombre</h2>
+        <article data-id="" class="tarjeta">
+          <h3>Zapatillas Nike Air Force 1 07 Mujer</h3>
+          <img src="./Imagenes/NikeAir-Force1-M.png" alt="NikeAir" />
+          <p>Zapatillas de moda para mujer</p>
+          <p>El estilo de corte low ofrece un look impecable y sencillo.</p>
+          <a href="https://www.nike.com.ar/nike-air-force-1-07-hf4263-133/p">
+            Ver detalle</a
+          >
+          <button type="button" class="agregar">Agregar</button>
+        </article>
+
+        <article data-id="" class="tarjeta">
+          <h3>Zapatillas Nike Air Force 1 08 Hombre</h3>
           <img src="./Imagenes/NikeAir-Force1-H.jpeg" alt="NikeAir" />
           <p>Zapatillas de moda para hombre</p>
-          <p>Con un estilo envejecido y colores clásicos, el AF1 renueva el estilo vintage.</p>
+          <p>
+            Con un estilo envejecido y colores clásicos, el AF1 renueva el
+            estilo vintage.
+          </p>
           <a
             href="https://www.nike.com.ar/nike-air-force-1-07-lv8-dv0789-100/p"
           >
             Ver detalle</a
           >
-      </article>
+          <button type="button" class="agregar">Agregar</button>
+        </article>
 
-    </article>
-    <article class="tarjeta">
-      <h2>Zapatillas Nike Air Force 1 08 Hombre</h2>
-      <img src="./Imagenes/NikeAir-Force1-H.jpeg" alt="NikeAir" />
-      <p>Zapatillas de moda para hombre</p>
-      <p>Con un estilo envejecido y colores clásicos, el AF1 renueva el estilo vintage.</p>
-      <a
-        href="https://www.nike.com.ar/nike-air-force-1-07-lv8-dv0789-100/p"
-      >
-        Ver detalle</a
-      >
-
+        <article data-id="" class="tarjeta">
+          <h3>Zapatillas Nike Air Force 1 08 Hombre</h3>
+          <img src="./Imagenes/NikeAir-Force1-H.jpeg" alt="NikeAir" />
+          <p>Zapatillas de moda para hombre</p>
+          <p>
+            Con un estilo envejecido y colores clásicos, el AF1 renueva el
+            estilo vintage.
+          </p>
+          <a
+            href="https://www.nike.com.ar/nike-air-force-1-07-lv8-dv0789-100/p"
+          >
+            Ver detalle</a
+          >
+          <button type="button" class="agregar">Agregar</button>
+        </article>
       </section>
     </main>
+    <script src="./js/productos.js"></script>
   </body>
 </html>
